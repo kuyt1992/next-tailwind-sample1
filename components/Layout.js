@@ -1,28 +1,28 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Layout({children, title="HP by Next.js"}) {
+export default function Layout({ children, title = "HP by Next.js" }) {
   return (
     <div className="flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-mono">
       <Head>
         <title>{title}</title>
       </Head>
       <header>
-        <nav className="bg-gray-800 w-screen">
+        <nav className="bg-blue-900 w-screen">
           <div className="flex items-center pl-8 h-14">
             <div className="flex space-x-4">
               <Link href="/">
-                <a className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">
+                <a className="text-gray-100 hover:bg-blue-700 px-3 py-2 rounded">
                   Home
                 </a>
               </Link>
               <Link href="/blog-page">
-                <a className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">
+                <a className="text-gray-100 hover:bg-blue-700 px-3 py-2 rounded">
                   Blog
                 </a>
               </Link>
               <Link href="/contact-page">
-                <a className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">
+                <a className="text-gray-100 hover:bg-blue-700 px-3 py-2 rounded">
                   Contact
                 </a>
               </Link>
@@ -40,7 +40,7 @@ export default function Layout({children, title="HP by Next.js"}) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{'  '}
+          Powered by{"  "}
           <span className="">
             <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
           </span>

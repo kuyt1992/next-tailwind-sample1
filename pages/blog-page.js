@@ -9,8 +9,8 @@ const Blog = ({ posts }) => {
         {posts && posts.map((post) => <Post key={post.id} post={post} />)}
       </ul>
     </Layout>
-  )
-}
+  );
+};
 
 export default Blog;
 
